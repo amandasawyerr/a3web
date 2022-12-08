@@ -11,13 +11,10 @@ function changeTxt() {
 // Change color functions
 // Changes color of text upon event 
 function changeClr() {
-    style-color; 'yellow'
+    style-color='yellow';
 }
 function normClr() {
-  style-color; 'white'
-}
-function normClr() {
-  style-color; 'white'
+  style-color='white';
 }
 // Change text size function
 function bigTxt() {
@@ -26,7 +23,7 @@ function bigTxt() {
 // Alert functions
 // Causes alert upon event
 function alrt() {
-  alert("JavaScript alert")
+  alert("JavaScript alert");
 }
 function inpt() {
   alert("Invalid address");
@@ -42,12 +39,12 @@ function catyrs(event) {
 // By Josh
 // Alert function for Geovisualization Page
 function meow() {
-  alert("Have you seen my baseball?")
+  alert("Have you seen my baseball?");
 }
 
 // Alert function for Spatial Analysis Page
 function meow() {
-  alert("Have you seen my Dad?")
+  alert("Have you seen my Dad?");
 }
 
 
