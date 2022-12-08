@@ -1,0 +1,160 @@
+<!-- This page is reserved for Alex Quantz -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- link to css style sheet and javascript file -->
+<!-- head/title used to define content at the top of the page-->
+<head>
+<title>SQjr Web Design</title>
+<link rel="stylesheet" href="CSS/a3web.css">
+<script src="JavaScript/main.js"></script>   
+                               
+<!-- responsive design by Justin -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!-- div and article tags adapted from w3schools to create independent content -->  
+<!-- h1 and h3 used to create visual hierarchy of headings-->
+<!-- picture for top of web page -->                                                                  
+<div class="hero-image">
+<div class="hero-text">	  
+<h1 onmouseover="changeClr(this)" onmouseout="normClr(this)">SQJr. Consulting Inc.</h1>
+<h3 onmouseover="changeClr(this)" onmouseout="normClr(this)">Geospatial Services - "Mapping the Future"</h3>
+</div>
+</div>
+
+
+<div class="img-text">	  
+</div>
+
+<!-- unordered html list tag for the navigation bar, using Josh's HTML template which referenced w3schools-->
+<!-- CSS modifications applied to maintain style of page -->
+<ul>
+<li><a class="active" href="index.html">Home</a></li>
+<li><a href="surveying.html">Surveying</a></li>
+<li><a href="remotesensing.html">Remote Sensing</a></li>
+<li><a href="spatialanalysis.html">Spatial Analysis</a></li>
+<li><a href="geovisualization.html">Geovisualization</a></li>
+<li><a href="programming.html">Programming</a></li>
+<li><a href="webdesign.html">Web Design</a></li>
+<li><a href="databaseprinciples.html">Database Management</a></li>
+</ul>
+
+                                     
+<!-- differing classes, h2, h3 and p tags used to create different elements to select upon-->
+<!-- separate repetitive tags to create numerous lines of text-->                                   
+<!-- bold formatting from Josh's template to enhance text content -->
+                                     
+<article class="all-browsers">
+  <h2>SQJr. Consulting Inc.</h2>
+</article>
+
+<!-- Alex's Content -->
+<!-- Description of Web Design services -->
+<article class="browser">
+<h2 class="p-spacing">Web Design</h2>
+<p>Do you need a website for your business? We have a talented team of individuals with years of experience and expansive portfolios ready to build, update or review your website. Our full stack developers are technically skilled in HTML, CSS and JavaScript, ready to effectively apply creativity, professionalism and functionality to your website. Our practices ensure accessible web content satisfying all web design standards and laws. Although the agency specializes in featuring cartographic content for the purpose of GIS, we are highly flexible for the right price and ready to develop your website from scratch if needed. We have access to all the tools and skills to have your business shining overnight.  Our team never stops until the job is done.</p>    
+</article>
+
+<!-- Code modified from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+<!-- Container for the image gallery -->
+<div class="gallery resized size">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+        <img src="Images/JoshWebsiter.png" style="width:100%" alt="Geovisualization gangster and spineless spatial analyst portfolio">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+        <img src="Images/AmandaWebr.png" style="width:100%" alt="Programming princess">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+        <img src="Images/WebsiteJJr.png" style="width:100%" alt="Religious remote sensor and sad surveyor">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+        <img src="Images/alexwebsiter.png" style="width:100%" alt="Wild web designer and database dame">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="description-gallery">
+      <p id="description"></p>
+    </div>
+
+    <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/JoshWebsiter.png" style="width:100%" onclick="currentSlide(1)" alt="Geovisualization gangster and spineless spatial analyst portfolio">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/AmandaWebr.png" style="width:100%" onclick="currentSlide(2)" alt="Programming princess">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/WebsiteJJr.png" style="width:100%" onclick="currentSlide(3)" alt="Religious remote sensor and sad surveyor">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/alexwebsiter.png" style="width:100%" onclick="currentSlide(4)" alt="Wild web designer and database dame">
+    </div>
+  </div>
+</div>
+
+<!-- Amanda description of our team-->
+<article class="browser">
+  <h4>Our Team</h4>
+  <h3>Amanda Sawyer</h3>
+  <p>Programming princess</p>
+    <h3>Alex Quantz</h3>
+  <p>Wild web designer and database dame</p>
+    <h3>Justin Jeff</h3>
+  <p>Religious remote sensor and sad surveyor</p>
+    <h3>Joshua Richer</h3>
+  <p>Geovisualization gangster and spineless spatial analyst</p>
+</article>
+  
+<script>
+//Alex's Content
+//Web Gallery
+//Code modified from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+let slideIndex = 1;
+showSlides(slideIndex);
+
+//Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+//Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("description");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  </script>
+
+</body>
+</html>

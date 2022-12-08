@@ -1,0 +1,300 @@
+/* body applies to all pages */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+  font-size:10vw;
+}
+
+/* hero-image, photo and picture apply specifically
+to the format on the three seperate pages, in order of 1, 2, 3.
+Each image is different, hense the slight variation in name */
+/* Added max-width for responsive design */
+/* hero-image used for home page background */
+.hero-image {
+  background-image: url("../Images/yukonriver.jpg");
+  background-color: rgb(0, 0, 0);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* hero-photo used for surveying page background */
+.hero-photo {
+  background-image: url("../Images/rtk.jpg");
+  background-color: rgb(0, 0, 0);
+  height: 500px;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* hero-picture used for Remote Sensing page background */
+.hero-picture {
+  background-image: url("../Images/helicopter.jpg");
+  background-color: rgb(0, 0, 0);
+  height: 500px;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* zero-picture used for Programming page background */
+.zero-picture {
+  background-image: url("../Images/view.png");
+  background-color: rgb(0, 0, 0);
+  height: 500px;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* hero-photo-a was used on the Geovisualization Page */
+/* This design was utilized from W3Schools, as well as the initial website template */
+
+.hero-photo-a {
+  background-image: url("../Images/Smoke.JPG");
+  background-color: rgb(0, 0, 0);
+  height: 500px;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* hero-photo-b was used on the Spatial Analysis Page */
+/* This design was utilized from W3Schools, as well as the initial website template */
+
+.hero-photo-b {
+  background-image: url("../Images/Okanogan.JPG");
+  background-color: rgb(0, 0, 0);
+  height: 500px;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* hero-text specifically applies to the image used for the background/header
+- with minor variations in text, but the format remains the same */
+
+.hero-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.6);
+  color: white;
+  font-weight: bold;
+  border: 3px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1vw;
+}
+/* Justin created img text to style the logo in the left corner of each page at set size to work on multiple views */
+.img-text {
+  background-image: url(../Images/LOGO2.2.PNG);
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(0%, 0%);
+  z-index: 2;
+  width: 280px;
+  height: 56px;
+  text-align: center;
+  font-size: 1vw;
+  background-repeat: no-repeat;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-image: initial;
+  background-size: contain;
+}
+
+/* Though slightly convoluted, these classes apply to almost all the text on all pages
+and remain a formatting staple. Through trial and error, and minor variances, we got there */
+
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+}
+.all-browsers > h2, .browser {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  color: rgb(255, 195, 0);
+  font-size:4vw;
+}
+.browser {
+  background: rgb(0, 0, 0);
+}
+.browser > h3, p {
+  text-align: center;
+  margin: 4px;
+  /* this was added to adjust the spacing between paragraphs - just testing it out */
+  padding-top: 10px;
+  font-size: 1.5vw;
+  color: silver;
+}
+.browsers > h4 {
+  padding-top: 10px;
+  /* this was adjusted - trying to adjust paragraph spacing */
+  text-align: center;
+  margin: 4px;
+  font-size: 0.2vw;
+  color: rgb(255, 195, 0);
+}
+
+/* List format, with a minor modification to colour when adapted from w3schools.
+They just do it so well, why can't we have it? Either way, it's yellow now */
+/* Josh owns ul code, Justin added font-size for responsive design */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-size: calc(8px + 1vw);
+}
+
+/* Justin created the li code for the style of the nav bar*/
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 32.5px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgb(255, 195, 0);
+}
+/* Saving my butt to seprate text because Lord forbid
+I use a <br> tag >:| */
+
+.p-spacing {
+  padding-bottom: 75px;
+}
+
+/* Display the image at 100% width, auto height, with 5 px of space, make it a a block element and centre the image, source (https://www.w3schools.com/css/css3_images.asp) */ 
+.imgclass {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+/* Just centering our javascript/html button */
+.the-button {
+  text-align: center;
+}
+
+/* Alex - formatting gallery photos for Web design page */
+/* Code modified from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.gallery {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/4) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.description-gallery {
+  text-align: center;
+  background-color: #222;
+  padding: 1px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.5;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.size {
+  max-width: 1700px; max-height:858px;
+}
