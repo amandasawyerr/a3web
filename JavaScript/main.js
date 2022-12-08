@@ -11,7 +11,7 @@ function changeTxt() {
 // Change color functions
 // Changes color of text upon event 
 function changeClr() {
-    style.color='yellow';
+    style.color='red';
 }
 function normClr() {
   style.color='white';
