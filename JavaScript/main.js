@@ -28,11 +28,6 @@ function alrt() {
 function inpt() {
   alert("Invalid address");
 }
-// Key value function
-// Change text to key value
-function catyrs(event) {
-  document.getElementById("cat").innerHTML = event.keyCode;
-}
 
 
 
